@@ -1,0 +1,396 @@
+@font-face {
+    font-family: 'KotraBold';
+    src: url('fonts/KOTRA_BOLD.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SCDream4';
+    src: url('fonts/SCDream4.otf') format('truetype');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 700vh;
+    font-family: 'KotraBold', sans-serif;
+    background-color: #000000;
+}
+
+.header-img{
+    width: 327px;
+    height: 66px;
+    position: relative;
+    left: 375px;
+    top: 43px;
+}
+
+.nav-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header-nav {
+    position: relative;
+    left: 736px;
+    z-index: 2;
+}
+
+.header-nav ul li {
+    float: left;
+    padding-left: 32px;
+    list-style: none;
+}
+
+.header-nav a {
+    color: #fff;
+    font-size: 25px;
+}
+
+.header-nav li a:hover {
+    text-decoration: none;
+    color: #dbdcdf;
+}
+
+.dropdown{
+    position : relative;
+    display : inline-block;
+  }
+  
+.dropbtn {
+    color: #e0b102;
+    font-size: 25px;
+    text-decoration: underline #e0b102;
+}
+
+.dropdown-content{
+    display : none;
+    position : absolute;
+    z-index : 1;
+  }
+  
+.dropdown-content a{
+    display : block;
+    color: #e0b102;
+    text-decoration: underline #e0b102;
+    width: 198px;
+    height: 53px;
+    background-color: #101010;
+    border-top: 1px solid #212121;
+    padding-left: 14px;
+    padding-bottom: 16px;
+    padding-top: 19px;
+  }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    transition: all 0.5s;
+  }
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.65;
+  }
+  
+.bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+.bg-warning-img {
+    width: 230px;
+    height: 35px;
+    position: relative;
+    left: 837px;
+    top: 837px;
+    bottom: 190px;
+}
+
+.second-scroll-pg {
+    position: relative;
+    top: 960px;
+    width: 1920px;
+    height: 1060px;
+    background: url(images/sec-pg-bg.png) no-repeat center;
+    background-size: cover;
+}
+
+.third-scroll-pg {
+    position: relative;
+    top: 1040px;
+    width: 1920px;
+    height: 1060px;
+    background: url(images/city.png) no-repeat center;
+    background-size: cover;
+}
+
+.third-scroll-title {
+    width: 260px;
+    height: 68px;
+    color: #BD0000;
+    text-align: center;
+    font-size: 62px;
+    position: absolute;
+    top: 255px;
+    left: 1307px;
+}
+
+.third-scroll-subtitle {
+    width: 186px;
+    height: 25px;
+    top: 352px;
+    left: 1369px;
+    color: #a68402;
+    font-size: 18px;
+    position: absolute;
+    text-align: center;
+}
+
+.third-scroll-desc {
+    width: 260;
+    height: 490px;
+    top: 384px;
+    left: 1369px;
+    color: #b60000;
+    font-size: 18px;
+    position: absolute;
+    text-align: left;
+    font-family: 'SCDream4', sans-serif;
+}
+
+
+.fourth-scroll-pg {
+    position: relative;
+    top: 940px;
+    width: 1920px;
+    height: 1060px;
+    background: url(images/sinner_bg.png) no-repeat center;
+    background-size: cover;
+}
+
+.four-scroll-desc {
+    width: 896px;
+    height: 81px;
+    top: 108px;
+    left: 495px;
+    position: absolute;
+    color: #BD0000;
+    font-size: 18px;
+    font-family: 'SCDream4', sans-serif;
+    text-align: center;
+}
+
+.fifth-scroll-pg {
+    position: relative;
+    top: 900px;
+    width: 1920px;
+    height: 1060px;
+    background: url(images/bus-bg.png) no-repeat center;
+    background-size: cover;
+}
+
+.fifth-pg-title {
+    width: 273;
+    height: 247px;
+    color: #BD0000;
+    text-align: center;
+    font-size: 45px;
+    position: absolute;
+    top: 451px;
+    left: 1307px;
+}
+
+.fifth-pg-desc {
+    width: 273;
+    height: 247px;
+    color: #BD0000;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'SCDream4', sans-serif;
+    position: absolute;
+    top: 576px;
+    left: 1307px;
+    text-align: left;
+}
+
+
+.sixth-scroll-pg {
+    position: relative;
+    top: 900px;
+}
+
+.sixth-img {
+    width: 1920px;
+    height: 1060px;
+    background: url(images/in-game-bg.png) no-repeat center;
+    position: relative;
+    top: -110px;
+    right: 265px;
+    z-index: 1;
+}
+
+.sixth-bg {
+    width: 1920px;
+    height: 1060px;
+    background: url(images/city.png) no-repeat center;
+    opacity: 0.25;
+    background-size: cover;
+    position: relative;
+    bottom: 1000px;
+    z-index: -1;
+}
+
+.sixth-pg-title {
+    width: 273;
+    height: 247px;
+    color: #BD0000;
+    text-align: center;
+    font-size: 45px;
+    position: absolute;
+    top: 251px;
+    left: 1339px;
+}
+
+.sixth-pg-desc {
+    width: 273;
+    height: 247px;
+    color: #BD0000;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'SCDream4', sans-serif;
+    position: absolute;
+    top: 451px;
+    left: 1339px;
+    text-align: left;
+}
+
+.seventh-scroll-pg {
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+    background: url(images/던전1-1.png) no-repeat center;
+    background-size: cover;
+}
+
+.seventh-pg-title {
+    width: 273;
+    height: 247px;
+    color: #BD0000;
+    text-align: center;
+    font-size: 45px;
+    position: absolute;
+    top: 400px;
+    left: 1307px;
+}
+
+.seventh-pg-desc {
+    width: 273;
+    height: 247px;
+    color: #BD0000;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'SCDream4', sans-serif;
+    position: absolute;
+    top: 606px;
+    left: 1307px;
+    text-align: left;
+}
+
+.footer {
+    position: relative;
+    width: 1920px;
+    height: 780px;
+    background-color: #000000;
+    text-align: center;
+}
+
+.footer-title {
+    top: 50%;
+    bottom: 25%;
+    left: 25%;
+    right: 25%;
+    color: #e0b102;
+    font-size: 62px;
+    font-weight: bold;
+    position: absolute;
+}
+
+.footer-footer {
+    width: 1920px;
+    height: 300px;
+    background-color: #101010;
+}
+
+.footer-footer .google-play-store {
+    width: 180px;
+    height: 60px;
+    position: relative;
+    background: url(images/googleplay-1.svg) no-repeat center;
+    background-size: cover;
+    top: 40px;
+    left: 450px;
+}
+
+.footer-footer .app-store {
+    width: 180px;
+    height: 60px;
+    position: relative;
+    background: url(images/appstore.png) no-repeat center;
+    background-size: cover;
+    top: -20px;
+    left: 850px;
+}
+
+.footer-footer .steam {
+    width: 180px;
+    height: 60px;
+    position: relative;
+    background: url(images/steam.png) no-repeat center;
+    background-size: cover;
+    top: -80px;
+    left: 1250px;
+}
+
+.service-use {
+    position: relative;
+    left: 480px;
+    bottom: 45px;
+}
+
+.service-use a{
+    color: #0bb4aa;
+    font-size: 18px;
+    font-family: 'SCDream4', sans-serif;
+} 
+
+.personal-data {
+    position: relative;
+    left: 865px;
+    bottom: 70px;
+}
+
+.personal-data a{
+    color: #0bb4aa;
+    font-size: 18px;
+    font-family: 'SCDream4', sans-serif;
+} 
+
+.copyrights p{
+    color: #78787f;
+    font-size: 18px;
+    font-family: 'SCDream4', sans-serif;
+    position: relative;
+    left: 473px;
+}
