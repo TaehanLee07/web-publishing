@@ -1,0 +1,55 @@
+* {margin: 0; padding: 0;}
+.wrap {width: 1920px; height: 1100px; background-color: #fbfbfb;}
+
+/* 헤더 영역 스타일링 */
+.header {width: 1920px; height: 68px; background-color: #ffffff; box-shadow: 1px 2px 0px 2px #ececec}
+
+.top-logo-title {position: relative; top: 20px; left: 55px;}
+.top-logo-title p {font-size: 18px; color: #2f2c2c;}
+.top-logo-title span{font-size: 24px; font-weight: bold; color: #2f2c2c;}
+
+.header-menu {position: relative; left: 350px; bottom: 10px;}
+.header-menu ul li {list-style: none; float: left; padding-left: 70px;}
+.header-menu ul li a {text-decoration: none; font-size: 18px; font-weight: bold; color: #2f2c2c;}
+
+.hamburger-menu {position: relative; bottom: 10px; left: 1800px; width: 25px; height: 25px;}
+.hamburger-menu:hover {cursor: pointer;}
+.hamburger-menu .line {width: 25px; height: 2px; background: url(images/Rectangle.png) no-repeat center; padding-top: 8px;}
+
+.search-tab-select-box {position: relative; top: 20px; left: 50px;}
+.select-box {width: 110px; height: 40px; border: 1px solid #dedede; font-size: 14px; text-align: center; border-radius: 5px; color: #000000;}
+
+.search-tab-input {position: relative; left: 160px; top: -20px;}
+.input-field {width: 365px; height: 38px; border: 1px solid #dedede; border-radius: 5px;}
+.input-field::placeholder {padding-left: 20px; color: #a3a3a3;}
+
+.insert-customer {position: relative; left: 540px; bottom: 60px;}
+.insert-customer > input {width: 130px; height: 40px; border-radius: 5px; border: none; background-color: #fa3f74; color: #ffffff;}
+.insert-customer > input:hover {background-color: #f8618c; color: #ffffff;}
+.insert-customer > input:active {background-color: #ffffff; color: #fa3f74;}
+.insert-customer::before {content: "____"; display: inline-block; position: relative; left: 35px; width: 20px; height: 18px; background: url(images/human-plus.png) center; background-size: cover; display: inline;}
+
+.insert-reservation {position: relative; left: 685px; bottom: 100px;}
+.insert-reservation > input {width: 130px; height: 40px; border-radius: 5px; border: none; background-color: #4393fd; color: #ffffff;}
+.insert-reservation > input:hover {background-color: #6aa7f5; color: #ffffff;}
+.insert-reservation > input:active {background-color: #ffffff; color: #4393fd;}
+.insert-reservation::before {content: "____"; display: inline-block; position: relative; left: 35px; width: 20px; height: 18px; background: url(images/yeah-yak.png) center; background-size: cover; display: inline;}
+
+.user-profile-icon {position: absolute; top: 100px; left: 1565px; width: 30px; height: 30px; border-radius: 15px; background: url(images/user-profile.png) center;}
+.user-profile-icon p {font-size: 14px; position: relative; top: 5px; left: 45px;}
+.user-profile-icon p::after {content: ""; display: inline-block; position: relative; left: 95px; bottom: 15px; height: 15px; width: 15px; background: url(images/under-arrow.png) no-repeat center;}
+
+.logout-bg {position: absolute; top: 100px; left: 1765px; width: 30px; height: 30px; border-radius: 15px; background: url(images/circle-bg.png) no-repeat center;}
+.logout-bg p {position: relative; bottom: 17px; left: 37px;}
+.logout-bg p::before {content: ""; display: inline-block; position: relative; top: 23px; right: 30px; height: 15px; width: 15px; background: url(images/X.png) no-repeat center;}
+
+.main-section {position: absolute; top: 150px; left: 50px; width: 1820px; height: 925px; background-color: #ffffff; box-shadow: 1px 1px 2px 0px #dedede;}
+.main-section span {position: relative; left: 45px; top: 30px;  font-size: 20px; font-weight: bold; color: #000000;}
+.main-section span::before {position: relative; top: 2px; right: 8px; content: "·"; width: 5px; height: 5px; font-size: 32px; color: #fa3f74;}
+
+.main-section-btn > input {position: relative; left: 1550px; bottom: 20px; width: 100px; height: 40px; border-radius: 5px; border: none; background-color: #4a5362; color: #ffffff;}
+
+.main-section-top-menu {position: relative; left: 35px; width: 1745px; height: 65px; border-radius: 5px; background-color: #f4f7fa;}
+.main-section-top-menu p {position: relative; top: 25px; left: 20px; font-size: 14px;}
+
+.top-menu-select select {position: relative; left: 95px;  width: 105px; height: 35px; border: 1px solid #e5e5e5;}

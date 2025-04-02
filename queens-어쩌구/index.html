@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>퀸즈_기간별_매출_조회</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="top-logo-title">
+                <p><span>Queens</span> DASHBOARD</p>
+            </div>
+            <div class="header-menu">
+                <ul>
+                    <li><a href="#">매출속보</a></li>
+                    <li><a href="#">고객관리</a></li>
+                    <li><a href="#">직원관리</a></li>
+                    <li><a href="#">재고관리</a></li>
+                    <li><a href="#">통계</a></li>
+                    <li><a href="#">환경설정</a></li>
+                    <li><a href="#">CID관리</a></li>
+                    <li><a href="#">예약현황</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </div>
+            <div class="hamburger-menu">
+                <div class="line 1"></div>
+                <div class="line 2"></div>
+                <div class="line 3"></div>
+            </div>
+        </div>
+        
+        <div class="search-tab-select-box">
+            <select class="select-box">
+                <option value="" selected>고객명</option>
+                <option value="">고객명1</option>
+                <option value="">고객명2</option>
+                <option value="">고객명3</option>
+            </select>
+        </div>
+        
+        <div class="search-tab-input">
+            <input type="text" placeholder="핸드폰 또는 고객명을 입력해주세요." class="input-field">
+        </div>
+
+        <div class="insert-customer">
+            <span class="icon1"></span>
+            <input type="submit" value="고객등록">
+        </div>
+
+        <div class="insert-reservation">
+            <span class="icon2"></span>
+            <input type="submit" value="예약등록">
+        </div>
+
+        <div class="user-profile-icon">
+            <p>metacity1234</p>
+        </div>
+
+        <div class="logout-bg">
+            <div class="logout-icon">
+                <p>logout</p>
+            </div>
+        </div>
+
+        <div class="main-section">
+            <span>기간별 매출 조회</span>
+            <div class="main-section-btn">
+                <input type="submit" value="엑셀 출력">
+                <input type="submit" value="인쇄">
+            </div>
+
+            <div class="main-section-top-menu">
+                <p>표시 항목</p>
+                <div class="top-menu-select">
+                    <select>
+                        <option selected>전체</option>
+                        <option>전체1</option>
+                        <option>전체2</option>
+                        <option>전체3</option>
+                    </select>
+                </div>
+                <div class="top-menu-input">
+                    <input type="text" placeholder="검색어 입력">
+                </div>
+                <div class="top-menu-submit">
+                    <input type="submit" value="검색">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
