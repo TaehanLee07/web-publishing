@@ -9,12 +9,20 @@
 <body>
     <div class="wrap">
         <div class="header">
-            <div class="top-logo-title">
+            <div class="top-logo-title" onclick="location.href='index.html'">
                 <p><span>Queens</span> DASHBOARD</p>
             </div>
             <div class="header-menu">
                 <ul>
-                    <li><a href="#">매출속보</a></li>
+                    <li>
+                        <a href="#" id="have-submenu">매출속보</a>
+                        <ul class="submenu">
+                            <li><a href="#">서브메뉴1-1</a></li>
+                            <li><a href="#">서브메뉴1-2</a></li>
+                            <li><a href="#">서브메뉴1-3</a></li>
+                            <li><a href="#">서브메뉴1-4</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#">고객관리</a></li>
                     <li><a href="#">직원관리</a></li>
                     <li><a href="#">재고관리</a></li>
@@ -47,19 +55,26 @@
 
         <div class="insert-customer">
             <span class="icon1"></span>
-            <input type="submit" value="고객등록">
+            <input type="submit" value="고객등록" onclick="return addCustomer()">
         </div>
 
         <div class="insert-reservation">
             <span class="icon2"></span>
-            <input type="submit" value="예약등록">
+            <input type="submit" value="예약등록"onclick="return yeahYak()">
         </div>
 
         <div class="user-profile-icon">
-            <p>metacity1234</p>
+            <p class="user-name">metacity1234</p>
+            <ul class="account-dropdown" id="accountDropdown">
+                <li onclick="switchAccount('metacity1234')">metacity1234</li>
+                <li onclick="switchAccount('metacity1235')">metacity1235</li>
+                <li onclick="switchAccount('metacity1236')">metacity1236</li>
+                <li onclick="switchAccount('metacity1237')">metacity1237</li>
+                <li onclick="switchAccount('metacity1238')">metacity1238</li>
+            </ul>
         </div>
 
-        <div class="logout-bg">
+        <div class="logout-bg" onclick="return logoutAlert()">
             <div class="logout-icon">
                 <p>logout</p>
             </div>
@@ -82,15 +97,242 @@
                         <option>전체3</option>
                     </select>
                 </div>
+
                 <div class="top-menu-input">
                     <input type="text" placeholder="검색어 입력">
                 </div>
+
                 <div class="top-menu-submit">
                     <input type="submit" value="검색">
                 </div>
+
+                <div class="top-menu-date-select">
+                    <div class="date-select">
+                        <p>기간별 조회</p>
+                        <input type="date" placeholder="시작일 선택">
+                    </div>
+                    <div class="date-select-end">
+                        <input type="date" placeholder="종료일 선택">
+                    </div>
+                </div>
+
+                <div class="top-menu-checkbox">
+                    <input type="radio" class="first-radio">
+                    <p>횟수권 판매 제외</p>
+                    <input type="radio" class="sec-radio">
+                    <p>횟수권 차감 제외</p>
+                </div>
             </div>
+
+            <div class="main-content-section">
+                <table class="content-table">
+                    <tr class="table-header">
+                        <th>번호</th>
+                        <th>날짜</th>
+                        <th>서비스</th>
+                        <th>제품</th>
+                        <th>정액권</th>
+                        <th>횟수권</th>
+                        <th>횟수권 차감 제외</th>
+                    </tr>
+                    <tr>
+                            <td>4</td>
+                            <td>2025-01-31</td>
+                            <td>50,000</td>
+                            <td>80,000</td>
+                            <td>500,000</td>
+                            <td>100,000</td>
+                            <td>730,000</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>2025-01-20</td>
+                        <td>50,000</td>
+                        <td>80,000</td>
+                        <td>500,000</td>
+                        <td>100,000</td>
+                        <td>730,000</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>2025-01-10</td>
+                        <td>50,000</td>
+                        <td>80,000</td>
+                        <td>500,000</td>
+                        <td>100,000</td>
+                        <td>730,000</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2025-01-01</td>
+                        <td>50,000</td>
+                        <td>80,000</td>
+                        <td>500,000</td>
+                        <td>100,000</td>
+                        <td>730,000</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2025-01-01</td>
+                        <td>50,000</td>
+                        <td>80,000</td>
+                        <td>500,000</td>
+                        <td>100,000</td>
+                        <td>730,000</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2025-01-01</td>
+                        <td>50,000</td>
+                        <td>80,000</td>
+                        <td>500,000</td>
+                        <td>100,000</td>
+                        <td>730,000</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2025-01-01</td>
+                        <td>50,000</td>
+                        <td>80,000</td>
+                        <td>500,000</td>
+                        <td>100,000</td>
+                        <td>730,000</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2025-01-01</td>
+                        <td>50,000</td>
+                        <td>80,000</td>
+                        <td>500,000</td>
+                        <td>100,000</td>
+                        <td>730,000</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2025-01-01</td>
+                        <td>50,000</td>
+                        <td>80,000</td>
+                        <td>500,000</td>
+                        <td>100,000</td>
+                        <td>730,000</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2025-01-01</td>
+                        <td>50,000</td>
+                        <td>80,000</td>
+                        <td>500,000</td>
+                        <td>100,000</td>
+                        <td>730,000</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2025-01-01</td>
+                        <td>50,000</td>
+                        <td>80,000</td>
+                        <td>500,000</td>
+                        <td>100,000</td>
+                        <td>730,000</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2025-01-01</td>
+                        <td>50,000</td>
+                        <td>80,000</td>
+                        <td>500,000</td>
+                        <td>100,000</td>
+                        <td>730,000</td>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>2025-01-01</td>
+                        <td>50,000</td>
+                        <td>80,000</td>
+                        <td>500,000</td>
+                        <td>100,000</td>
+                        <td>730,000</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2025-01-01</td>
+                        <td>50,000</td>
+                        <td>80,000</td>
+                        <td>500,000</td>
+                        <td>100,000</td>
+                        <td>730,000</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2025-01-01</td>
+                        <td>50,000</td>
+                        <td>80,000</td>
+                        <td>500,000</td>
+                        <td>100,000</td>
+                        <td>730,000</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2025-01-01</td>
+                        <td>50,000</td>
+                        <td>80,000</td>
+                        <td>500,000</td>
+                        <td>100,000</td>
+                        <td>730,000</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2025-01-01</td>
+                        <td>50,000</td>
+                        <td>80,000</td>
+                        <td>500,000</td>
+                        <td>100,000</td>
+                        <td>730,000</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2025-01-01</td>
+                        <td>50,000</td>
+                        <td>80,000</td>
+                        <td>500,000</td>
+                        <td>100,000</td>
+                        <td>730,000</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2025-01-01</td>
+                        <td>50,000</td>
+                        <td>80,000</td>
+                        <td>500,000</td>
+                        <td>100,000</td>
+                        <td>730,000</td>
+                    </tr>
+                </table>
+            </div>
+
+                <div class="footer">
+                    <div class="go-previous-page"></div>
+                    <div class="go-other-btn">
+                        <div class="tab 1">1</div>
+                        <div class="tab 2">2</div>
+                        <div class="tab 3">3</div>
+                        <div class="tab 4">4</div>
+                        <div class="tab 5">5</div>
+                    </div>
+                    <div class="go-netx-page"></div>
+                </div>
+                
+                <div id="login-modal">
+                    <div class="modal-content">
+                        <h3>로그인</h3>
+                        <input type="text" id="login-username" placeholder="아이디">
+                        <input type="password" id="login-password" placeholder="비밀번호">
+                        <input type="button" value="로그인" onclick="loginUser()">
+                    </div>
+                </div>
         </div>
 
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
