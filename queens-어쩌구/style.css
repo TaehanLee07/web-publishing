@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 * {margin: 0; padding: 0;}
 body {overflow: hidden; display: block;}
 .wrap {width: 1920px; height: 1100px; background-color: #fbfbfb;}
@@ -11,7 +12,7 @@ body {overflow: hidden; display: block;}
 .top-logo-title p {font-size: 18px; color: #2f2c2c;}
 .top-logo-title span{font-size: 24px; font-weight: bold; color: #2f2c2c;}
 
-.header-menu {position: relative; left: 350px; bottom: 10px;}
+.header-menu {font-family: "Noto Sans KR", sans-serif; position: relative; left: 350px; bottom: 10px;}
 .header-menu ul li {list-style: none; float: left; padding-left: 70px;}
 .header-menu ul li a:hover {color: #a5a5a5;}
 .header-menu ul li a {text-decoration: none; font-size: 18px; font-weight: bold; color: #2f2c2c;}
@@ -22,7 +23,7 @@ body {overflow: hidden; display: block;}
 .header-menu ul li .submenu li a { display: block; text-decoration: none; color: #2f2c2c; font-size: 16px;}
 .header-menu ul li .submenu li a:hover {background-color: #f4f4f4;}
 
-
+/* 햄버거 메뉴 스타일링 */
 .hamburger-menu {position: relative; bottom: 10px; left: 1800px; width: 25px; height: 25px;}
 .hamburger-menu:hover {cursor: pointer;}
 .hamburger-menu .line {width: 25px; height: 2px; background: url(images/Rectangle.png) no-repeat center; padding-top: 8px;}
@@ -33,32 +34,32 @@ body {overflow: hidden; display: block;}
 .search-tab-input {position: relative; left: 160px; top: -20px;}
 .input-field {width: 365px; height: 38px; border: 1px solid #dedede; border-radius: 5px;}
 .input-field::placeholder {padding-left: 20px; color: #a3a3a3;}
-
+/* 고객등록 */
 .insert-customer {position: relative; left: 540px; bottom: 60px;}
 .insert-customer > input {width: 130px; height: 40px; border-radius: 5px; border: none; background-color: #fa3f74; color: #ffffff;}
 .insert-customer > input:hover {cursor: pointer; background-color: #f8618c; color: #ffffff;}
 /* .insert-customer > input:active {background-color: #ffffff; color: #fa3f74;} */
-.insert-customer::before {content: ""; display: inline-block; position: absolute; top: 10px; left: 10px; width: 20px; height: 18px; background: url(images/human-plus.png) center; background-size: cover; display: inline;}
-
+.insert-customer::before {content: ""; display: inline-block; position: absolute; top: 10px; left: 10px; width: 20px; height: 18px; background: url(images/human-plus.png) no-repeat center; display: inline;}
+/* 예약 등록 */
 .insert-reservation {position: relative; left: 685px; bottom: 100px;}
 .insert-reservation > input {width: 130px; height: 40px; border-radius: 5px; border: none; background-color: #4393fd; color: #ffffff;}
 .insert-reservation > input:hover {cursor: pointer; background-color: #6aa7f5; color: #ffffff;}
 /* .insert-reservation > input:active {background-color: #ffffff; color: #4393fd;} */
-.insert-reservation::before {content: ""; display: inline-block; position: absolute; top: 10px; left: 10px; width: 25px; height: 20px; background: url(images/yeah-yak.png) center; background-size: cover; display: inline;}
+.insert-reservation::before {content: ""; display: inline-block; position: absolute; top: 10px; left: 10px; width: 25px; height: 20px; background: url(images/yeah-yak.png) no-repeat center; display: inline;}
 
 .user-profile-icon {position: absolute; top: 100px; left: 1565px; width: 30px; height: 30px; border-radius: 15px; background: url(images/user-profile.png) center;}
 .user-profile-icon p {font-size: 14px; position: relative; top: 5px; left: 45px;}
 .user-profile-icon p::after {content: ""; display: inline-block; position: relative; left: 95px; bottom: 15px; height: 15px; width: 15px; background: url(images/under-arrow.png) no-repeat center;}
 .user-profile-icon p:hover::after{cursor: pointer;}
-
+/* 로그아웃 버튼 */
 .logout-bg {position: absolute; top: 100px; left: 1765px; width: 30px; height: 30px; border-radius: 15px; background: url(images/circle-bg.png) no-repeat center;}
 .logout-bg p {position: relative; bottom: 17px; left: 37px;}
 .logout-bg p::before {content: ""; display: inline-block; position: relative; top: 23px; right: 30px; height: 15px; width: 15px; background: url(images/X.png) no-repeat center;}
 .logout-bg:hover {cursor: pointer;}
 /* 메인 section 스타일링 */
-.main-section {position: absolute; top: 150px; left: 50px; width: 1820px; height: 900px; background-color: #ffffff; box-shadow: 4px 5px 5px 0px #dedede;}
+.main-section {position: absolute; top: 150px; left: 50px; width: 1820px; height: 900px; background-color: #ffffff; box-shadow: 4px 5px 5px 0px #dedede; border: 1px solid #dedede;}
 .main-section span {position: relative; left: 45px; top: 30px;  font-size: 20px; font-weight: bold; color: #000000;}
-.main-section span::before {position: relative; top: 2px; right: 8px; content: "·"; width: 5px; height: 5px; font-size: 32px; color: #fa3f74;}
+.main-section span::before {position: relative; top: 2px; right: 6px; content: "·"; width: 5px; height: 5px; font-size: 38px; color: #fa3f74;}
 
 .main-section-btn > input {position: relative; left: 1550px; bottom: 20px; width: 100px; height: 40px; border-radius: 5px; border: none; background-color: #4a5362; color: #ffffff;}
 .main-section-btn > input:hover {background-color: #7b7c7e;}
@@ -69,11 +70,12 @@ body {overflow: hidden; display: block;}
 
 .main-section-top-menu {border: 1px solid #dedede;}
 .top-menu-select select {position: relative; left: 95px;  width: 105px; height: 35px; border: 1px solid #e5e5e5;}
-
+/* 검색창 */
 .top-menu-input input {position: absolute; top: 18px; left: 220px; width: 225px; height: 35px; border: 1px solid #dedede;}
 .top-menu-input input::placeholder {font-size: 12pt; padding-left: 12px; color: #cacaca;}
-
+/* 검색하기 버튼 */
 .top-menu-submit input {position: absolute; bottom: 11px; left: 445px; width: 70px; height: 35px; border: none; background-color: #4a5362; color: #ffffff;}
+.top-menu-submit input:hover {cursor: pointer;}
 .top-menu-submit input:active {background-color: #6a7689;}
 
 /* date 기본 placeholder 제거 */
@@ -85,7 +87,7 @@ input[type=date]::-webkit-datetime-edit-year-field {-webkit-appearance: none; di
 input[type=date]::before { content: attr(placeholder);  position: relative; top: 8px; left: 14px; font-size: 12px;  color: #000000;}
 /* 기본 아이콘 제거 */
 input[type="date"]::-webkit-calendar-picker-indicator {display: none;} 
-
+/* 날짜 선택 */
 .date-select p {position: relative; top: -27px; left: 550px; font-size: 14px; font-weight: bold;}
 .date-select input {position: absolute; bottom: 12px; left: 650px; width: 97px; height: 33px; border: none; border: 1px solid #dedede;}
 .date-select::after { position: absolute; top: 18px; left:750px; content: ''; width: 40px; height: 35px; background: url(images/달력2.png) no-repeat center; background-color: #4a5362;} 
@@ -99,16 +101,17 @@ input[type="date"]::-webkit-calendar-picker-indicator {display: none;}
 .top-menu-checkbox .first-radio {position: absolute; bottom: 18px; left: 1030px; width: 21px; height: 21px;}
 .top-menu-checkbox .sec-radio {position: absolute; bottom: 18px; left: 1180px; width: 21px; height: 21px;}
 .top-menu-checkbox p {position: relative; top: -79px; left: 1010px; padding-left: 50px;  float: left;}
-
+/* 라디오 버튼 스타일링 */
 [type="radio"] { appearance: none; border-radius: 50%; box-sizing: border-box; width: 20px; height: 20px; border: 1px solid gray; cursor: pointer; z-index: 99;}
 [type="radio"]:checked { border: 6px solid #4a5362;}
 
 .main-content-section {position: relative;  left: 38px; width: 1740px; height: 675px; border: 1px solid #dedede; background-color: #ffffff; max-height: 550px; overflow-y: auto;
     overflow-x: hidden; }
 .main-content-section > .content-table {position: relative; top: -10px; width: 1740px; background-color: #ffffff; border-collapse: collapse; border: 1px solid #e5e5e5;}
-.main-content-section .table-header {position: sticky; top: 0; z-index: 2; width: 1740px; height: 45px; background-color: #f4f7fa; border: 1px solid #e5e5e5; line-height: 45px;}
+.main-content-section .table-header {position: sticky; top: 0; z-index: 2; width: 1740px; height: 35px; background-color: #f4f7fa; border: 1px solid #e5e5e5; line-height: 45px;}
 .main-content-section tr {width: 1740px; height: 45px; background-color: #ffffff;}
 .main-content-section tr:not(:first-child):hover {background-color: #f9f9f9;}
+/* .main-content-section tr:not(:first-child):active {background-color: #4393fd} */
 .main-content-section td {text-align: center; position: relative;}
 .main-content-section > .content-table > td {font-size: 14pt;}
 
@@ -116,7 +119,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {display: none;}
 
 .content-table th, .content-table td { border: 1px solid #ddd; padding: 8px; text-align: center;}
 
-
+/* 푸터 영역 바로가기 및 오른쪽 왼쪽 화살표 */
 .go-previous-page {position: absolute; top: 845px; left: 755px;  width: 30px; height: 30px; background-color: #ededed; border-radius: 3px;}
 .go-previous-page:hover {cursor: pointer; background-color: #c2bebe;}
 .go-previous-page::after {content: ''; position: absolute; top: 8px; left: 11px; width: 7px; height: 15px; background: url(images/right-arrow.png) no-repeat center;}
@@ -125,90 +128,58 @@ input[type="date"]::-webkit-calendar-picker-indicator {display: none;}
 .go-netx-page:hover {cursor: pointer; background-color: #c2bebe;}
 .go-netx-page::after {content: ''; position: absolute; top: 8px; left: 11px; width: 7px; height: 15px; background: url(images/left-arrow.png) no-repeat center;}
 
-.go-other-btn > .tab {position: relative; top: 82px; left: 810px; display: flex; justify-content: center; align-items: center; padding-left: 3px; float: left; width: 30px; height: 30px; background-color: #ffffff;}
+.go-other-btn > .tab {position: relative; top: 77px; left: 810px; display: flex; justify-content: center; align-items: center; border-radius: 1px; padding-left: 3px; float: left; width: 30px; height: 30px; background-color: #ffffff;}
 .go-other-btn > .tab:hover {cursor: pointer; background-color: #4a5362; color: #ffffff;}
 
-/* 여기서 부턴 JS용 CSS */
 
-.logout-bg.logged-out p::before {
-    content: "";
-    display: inline-block;
-    position: relative;
-    top: 23px;
-    right: 30px;
-    height: 15px;
-    width: 15px;
-    background: url(images/login-icon.png) no-repeat center;
-}
-
-#login-modal {
-    display: none; 
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.5);
-    z-index: 1000;
-}
-
-#login-modal .modal-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    width: 300px;
-    box-sizing: border-box;
-}
-
-#login-modal h3 {
-    margin-bottom: 15px;
-    text-align: center;
-}
-
+/* 로그인 모달 */
+.logout-bg.logged-out p::before { content: ""; display: inline-block; position: relative; top: 23px; right: 30px; height: 15px; width: 15px; background: url(images/login-icon.png) no-repeat center;}
+#login-modal { display: none;  position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1000;}
+#login-modal .modal-content { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #fff; padding: 20px; border-radius: 5px; width: 600px; height: 300px; line-height: 50px; box-sizing: border-box;}
+#login-modal h3 { font-family: "Noto Sans KR", sans-serif; font-size: 32px; margin-top: 10px; margin-bottom: 45px; text-align: center;}
 #login-modal input[type="text"],
-#login-modal input[type="password"] {
-    width: 100%;
-    padding: 8px;
-    margin: 5px 0;
-    box-sizing: border-box;
+#login-modal input[type="password"] { width: 100%; padding: 8px; margin: 5px 0; box-sizing: border-box;}
+#login-modal input[type="button"] { width: 100%; padding: 8px; background-color: #4a5362; color: #fff; border: none; cursor: pointer; margin-top: 10px;}
+#login-modal input[type="button"]:hover { background-color: #606b7d; transition: all 0.5s;}
+
+/* 닫기 버튼 */
+#close-modal { position: relative; bottom: 270px; left: 530px; width: 30px; height: 30px; border: none; color: #ffffff; background-color: #4a5362;}
+#close-modal:hover {cursor: pointer;}
+
+/* 드롭다운 메뉴 */
+.account-dropdown { position: absolute; top: 40px; left: 50px; width: 150px; background: white; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); list-style: none; padding: 5px 0; display: none; /* 기본적으로 숨김 */ z-index: 1000;}
+.account-dropdown li { padding: 8px 12px; cursor: pointer; transition: background 0.3s; font-size: 14px;}
+.account-dropdown li:hover { background: #f1f1f1;}
+
+.user-profile-icon span{position: absolute; display: none; text-align: center; background-color: #1E2021; padding: 20px; width: 300px; border-radius: 3px; box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); right: -4px; color: #FFF; font-size: 13px;}
+.user-profile-icon span:before{ position: absolute; content: ''; width:0; height: 0;  border-bottom-color:#1E2021; right:10px; top:-12px}
+.user-profile-icon span:after{ width:100%; height:40px; content:''; position: absolute; left:0;}
+.user-profile-icon:hover span{ display:block; transform-origin: 100% 0%; animation: fadeIn 0.3s ease-in-out;}
+
+@keyframes fadeIn {
+	0% { 
+		opacity:0; 
+		transform: scale(0.6);
+	}
+	100% {
+		opacity:100%;
+		transform: scale(1);
+	}
 }
 
-#login-modal input[type="button"] {
-    width: 100%;
-    padding: 8px;
-    background-color: #4a5362;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    margin-top: 10px;
+::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
 }
 
-.account-dropdown {
-    position: absolute;
-    top: 40px;
-    left: 50px;
-    width: 150px;
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    list-style: none;
-    padding: 5px 0;
-    display: none; /* 기본적으로 숨김 */
-    z-index: 1000;
+::-webkit-scrollbar-thumb {
+    outline: none;
+    border-radius: 10px;
+    border: 4px solid transparent;
+    box-shadow: inset 6px 6px 0 rgba(34, 34, 34, 0.15);
 }
 
-.account-dropdown li {
-    padding: 8px 12px;
-    cursor: pointer;
-    transition: background 0.3s;
-    font-size: 14px;
-}
-
-.account-dropdown li:hover {
-    background: #f1f1f1;
+::-webkit-scrollbar-thumb:hover {
+    border: 4px solid transparent;
+    box-shadow: inset 6px 6px 0 rgba(34, 34, 34, 0.3);
 }
